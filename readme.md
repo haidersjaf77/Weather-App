@@ -95,11 +95,6 @@ With unpredictable climate changes, having a localized, intelligent weather fore
 - 📊 `plotly`, `pydeck` – Visualization  
 - 🌍 `geopy`, `pytz` – Location and timezone support  
 
----
-
-Here’s the corrected and properly formatted Markdown snippet for your `README.md`:
-
-````markdown
 ## 🗂️ Folder Structure
 
 ```bash
@@ -107,8 +102,7 @@ weather-app/
 ├── app.py               # Main Streamlit UI
 ├── w_model.py           # ML + data fetching logic
 ├── requirements.txt     # All dependencies
-````
-
+```
 ---
 
 ## 🚀 How to Run Locally
