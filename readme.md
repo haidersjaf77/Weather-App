@@ -97,23 +97,28 @@ With unpredictable climate changes, having a localized, intelligent weather fore
 
 ---
 
-## 🗂️ Folder Structure  
-```bash 
+Here’s the corrected and properly formatted Markdown snippet for your `README.md`:
+
+````markdown
+## 🗂️ Folder Structure
+
+```bash
 weather-app/
 ├── app.py               # Main Streamlit UI
 ├── w_model.py           # ML + data fetching logic
 ├── requirements.txt     # All dependencies
+````
 
 ---
-```
-````markdown
+
 ## 🚀 How to Run Locally
 
-1. **Clone the repo**  
+1. **Clone the repo**
+
    ```bash
    git clone https://github.com/haidersjaf77/Weather-App.git
    cd Weather-App
-````
+   ```
 
 2. **Install dependencies**
 
@@ -121,8 +126,8 @@ weather-app/
    pip install -r requirements.txt
    ```
 
-3. **Add your API keys in `w_model.py`**
-   Open the `w_model.py` file and replace the placeholders with your keys:
+3. **Add your API keys in `w_model.ipynb`**
+Open the `w_model.ipynb` file and replace the placeholders with your actual keys:
 
    ```python
    VC_API_KEY = 'YOUR_VISUAL_CROSSING_KEY'
@@ -134,3 +139,4 @@ weather-app/
    ```bash
    streamlit run app.py
    ```
+
