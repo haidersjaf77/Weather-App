@@ -14,7 +14,6 @@ This project uses **Machine Learning and real-time weather APIs** to dynamically
 - [🛠️ Technologies Used](#🛠️-technologies-used)  
 - [🗂️ Folder Structure](#🗂️-folder-structure)  
 - [🚀 How to Run Locally](#🚀-how-to-run-locally)  
-- [☁️ Streamlit Cloud Deployment](#☁️-streamlit-cloud-deployment)  
 
 ---
 
@@ -102,7 +101,7 @@ weather-app/
 ├── app.py # Streamlit UI script
 ├── w_model.ipynb # ML + data fetching logic
 ├── requirements.txt # Python dependencies
-├── pngs/ # Dashboard screenshots (for README)
+├── images/ # Dashboard screenshots (for README)
 │ ├── dashboard.png
 │ ├── weather.png
 │ ├── tempforecast.png
@@ -114,16 +113,16 @@ weather-app/
 ## 📸 Dashboard Previews
 
 ### 🌍 Main Dashboard 
-![Main Dashboard](pngs/Dashboard.png)
+![Main Dashboard](images/Dashboard.png)
 
 ### 📈 Forecasting Charts
-![Forecasting](pngs/Prediction.png)
+![Forecasting](images/Prediction.png)
 
 ### 🌡️ Temperature Forecast
-![Temperature Prediction](pngs/TemperatureForecast.png)
+![Temperature Prediction](images/TemperatureForecast.png)
 
 ### 💧 Humidity Forecast
-![Humidity Prediction](pngs/HumidityForecast.png)
+![Humidity Prediction](images/HumidityForecast.png)
 
 ---
 
