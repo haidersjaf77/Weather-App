@@ -1,19 +1,4 @@
-from IPython import get_ipython
-from IPython.display import display
-# %%
-import requests
-
-lat = 24.8607  
-lon = 67.0011
-
-api_key = ""
-
-url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}"
-response = requests.get(url)
-
-print(response.status_code)
-print(response.json())
-
+import os
 import requests
 import pandas as pd
 import numpy as np
@@ -23,8 +8,9 @@ from sklearn.metrics import mean_squared_error
 from datetime import datetime, timedelta
 import pytz
 
-# Set this to your Visual Crossing API key
-VC_API_KEY = ''
+# Load API keys from environment variables
+VC_API_KEY = os.getenv("VC_API_KEY")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 def fetch_historical_weather(city, days=7):
     end_date = datetime.now().strftime('%Y-%m-%d')
@@ -83,8 +69,7 @@ def predict_future(model, current_value, steps=5):
     return predictions[1:]
 
 def get_current_weather(city):
-    API_KEY = ""
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={OPENWEATHER_API_KEY}&units=metric"
     response = requests.get(url)
     data = response.json()
     return {
@@ -161,4 +146,3 @@ def weather_view(city):
         "lat": current.get('lat'),
         "lon": current.get('lon'),
     }
-
