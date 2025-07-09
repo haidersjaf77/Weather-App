@@ -5,7 +5,6 @@ import pytz
 from datetime import datetime, timedelta, date
 import plotly.graph_objects as go
 import pydeck as pdk
-from geopy.geocoders import Nominatim
 from w_model import (
     fetch_historical_weather,
     get_current_weather,
@@ -160,11 +159,6 @@ if city.strip():
                 st.subheader("🗺️ Location Map")
 
                 lat, lon = current.get('lat'), current.get('lon')
-                if not lat or not lon:
-                    geolocator = Nominatim(user_agent="weather_app")
-                    location = geolocator.geocode(city)
-                    if location:
-                        lat, lon = location.latitude, location.longitude
 
                 if lat and lon:
                     st.pydeck_chart(pdk.Deck(
