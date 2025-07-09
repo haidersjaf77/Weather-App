@@ -99,10 +99,32 @@ With unpredictable climate changes, having a localized, intelligent weather fore
 
 ```bash
 weather-app/
-├── app.py               # Main Streamlit UI
-├── w_model.py           # ML + data fetching logic
-├── requirements.txt     # All dependencies
+├── app.py # Streamlit UI script
+├── w_model.ipynb # ML + data fetching logic
+├── requirements.txt # Python dependencies
+├── pngs/ # Dashboard screenshots (for README)
+│ ├── dashboard.png
+│ ├── weather.png
+│ ├── tempforecast.png
+│ ├── humidforecast.png
+└── README.md # Project documentation
 ```
+---
+
+## 📸 Dashboard Previews
+
+### 🌍 Main Dashboard 
+![Main Dashboard](pngs/Dashboard.png)
+
+### 📈 Forecasting Charts
+![Forecasting](pngs/Prediction.png)
+
+### 🌡️ Temperature Prediction
+![Temperature Prediction](pngs/TemperatureForecast.png)
+
+### 💧 Humidity Prediction
+![Humidity Prediction](pngs/HumidityForecast.png)
+
 ---
 
 ## 🚀 How to Run Locally
@@ -133,4 +155,3 @@ Open the `w_model.ipynb` file and replace the placeholders with your actual keys
    ```bash
    streamlit run app.py
    ```
-
