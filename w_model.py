@@ -6,7 +6,7 @@ import requests
 lat = 24.8607  
 lon = 67.0011
 
-api_key = "3404aeb8b3015a08702f82fda22762f3"
+api_key = ""
 
 url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}"
 response = requests.get(url)
@@ -24,7 +24,7 @@ from datetime import datetime, timedelta
 import pytz
 
 # Set this to your Visual Crossing API key
-VC_API_KEY = '4DCPB7B7CXC58GW9QT7DAKDQ2'
+VC_API_KEY = ''
 
 def fetch_historical_weather(city, days=7):
     end_date = datetime.now().strftime('%Y-%m-%d')
@@ -83,7 +83,7 @@ def predict_future(model, current_value, steps=5):
     return predictions[1:]
 
 def get_current_weather(city):
-    API_KEY = "3404aeb8b3015a08702f82fda22762f3"
+    API_KEY = ""
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
     response = requests.get(url)
     data = response.json()
