@@ -1,6 +1,7 @@
 # 🌦️ Real-Time Weather Forecasting App
 
 This project uses **Machine Learning and real-time weather APIs** to dynamically predict temperature, humidity, and rainfall for any city in the world. Built with a modern **Streamlit dashboard**, it brings intelligent forecasting to users in an interactive and visual way.
+Check out the live app here 👉 [WeatherML Dashboard](https://wmodelipynb-hymijf8bqxnjqpasb7kw3y.streamlit.app/)
 
 ---
 
@@ -13,7 +14,8 @@ This project uses **Machine Learning and real-time weather APIs** to dynamically
 - [📈 Insights Generated](#📈-insights-generated)  
 - [🛠️ Technologies Used](#🛠️-technologies-used)  
 - [🗂️ Folder Structure](#🗂️-folder-structure)  
-- [🚀 How to Run Locally](#🚀-how-to-run-locally)  
+- [🚀 How to Run Locally](#🚀-how-to-run-locally)
+- [📸 Dashboard Previews](#-dashboard-previews)
 
 ---
 
@@ -123,6 +125,9 @@ weather-app/
 
 ### 💧 Humidity Forecast
 ![Humidity Prediction](images/HumidityForecast.png)
+
+### 🗺️ Location Map Preview
+![Location Map](images/loc.png)
 
 ---
 
