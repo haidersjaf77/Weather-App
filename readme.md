@@ -119,10 +119,10 @@ weather-app/
 ### 📈 Forecasting Charts
 ![Forecasting](pngs/Prediction.png)
 
-### 🌡️ Temperature Prediction
+### 🌡️ Temperature Forecast
 ![Temperature Prediction](pngs/TemperatureForecast.png)
 
-### 💧 Humidity Prediction
+### 💧 Humidity Forecast
 ![Humidity Prediction](pngs/HumidityForecast.png)
 
 ---
